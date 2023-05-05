@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    border: 1px solid black;
+    width: 30%;
+}
+
+.text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
