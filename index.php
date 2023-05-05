@@ -1,9 +1,11 @@
 <?php
 
 require_once __DIR__ . '/Models/Product.php';
-require_once __DIR__ . '/Models/Type.php';
+require_once __DIR__ . '/Models/Food.php';
 
-$cat = new Type('cat');
 
-$cuccia = new Product('cuccia', 12, $cat);
-var_dump($cuccia);
+
+$croccantini = new Food('croccantini', 12, 'cat', 100);
+var_dump($croccantini);
+
+echo "<p>" . $croccantini->title . "</p>";
