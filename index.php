@@ -1,9 +1,9 @@
 <?php
 
 require_once __DIR__ . '/Models/Product.php';
-require_once __DIR__ . '/Models/Cat.php';
+require_once __DIR__ . '/Models/Type.php';
 
-$cuccia = new Cat('cuccia', 12);
+$cat = new Type('cat');
+
+$cuccia = new Product('cuccia', 12, $cat);
 var_dump($cuccia);
-
-echo $cuccia->getType();
