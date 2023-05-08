@@ -15,4 +15,20 @@ class Product {
         $this->price = $_price;
         $this->type = $_type;
     }
+
+    /**
+     * Calcola lo sconto se eta maggiore di 65
+     * 
+     * @param int $age eta
+     */
+
+    public function calcDiscount($age) {
+        if(!is_numeric($age)) {
+            throw new Exception('Inserire un numero valido');
+        }
+
+        if($age > 65) {
+            return 'Hai diritto al 20% di sconto';
+        } 
+    }
 }

@@ -12,8 +12,13 @@ $prodotti = [
 ];
 
 foreach($prodotti as $prod) {
-    $prod->setWeight(50, 'g');
+    $prod->setWeight(rand(1, 50), 'grams');
 }
+
+$guinzaglio = new Toy('guinzaglio', 20, 'dog', 10);
+//Throw expection
+$guinzaglio->calcDiscount('hello');
+
 
 ?>
 
