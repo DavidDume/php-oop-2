@@ -1,7 +1,11 @@
 <?php
+require_once __DIR__ . '/../Traits/Weight.php';
 
 
 class Product {
+
+    use Weight;
+
     public $title;
     public $price;
     public $type;

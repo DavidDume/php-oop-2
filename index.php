@@ -11,6 +11,10 @@ $prodotti = [
     new Toy('osso', 20, 'dog', "bianco")
 ];
 
+foreach($prodotti as $prod) {
+    $prod->setWeight(50, 'g');
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -33,6 +37,7 @@ $prodotti = [
                 </div>
                 
                 <p>{$prodotto->type}</p>
+                <p>Peso: {$prodotto->getWeight()} </p>
             </div>
             ";
         }
